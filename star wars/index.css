@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section {
+	padding: 100px 80px;
+}
+.hero {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: left;
+	text-align: center;
+	align-items: right;
+	min-height: 100vh;
+	color: #fff;
+}
+header {
+	position: absolute;
+	width: 100%;
+}
+div {
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+.hero .background-img {
+	background-size: 80%;
+	/* background-color: rgb(238, 154, 52); */
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+nav ul {
+	margin: 0;
+	/* this solved my hover problem with z-1 */
+	position: relative;
+	z-index: 1;
+	font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+	display: flex;
+	font-size: 17px;
+	font-weight: 100;
+	justify-content: center;
+	margin: 40px auto;
+	flex-basis: 50px;
+}
+
+ul div li {
+	/* background-color: aqua; */
+	color: whitesmoke;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: center;
+	opacity: 0.5;
+	transition: opacity 0.3s ease-in 0s;
+}
+
+nav ul div {
+	border-right: 2px solid white;
+}
+nav ul {
+	list-style: none;
+}
+ul div li:hover {
+	opacity: 1;
+	color: white;
+	font-weight: 500;
+}
+
+.hero h1 {
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+}
+
+div.hero-content-area {
+	display: flex;
+	flex-direction: column;
+
+	flex-wrap: wrap;
+	/* flex-basis: 500px; */
+	/* background-color: blueviolet; */
+	top: 0;
+	margin-top: 500px;
+	justify-content: center;
+	padding: 0;
+	flex-basis: 300px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+.hero-content-area h1 {
+	/* background-color: aqua; */
+	/* flex-basis: 20%; */
+	text-align: justify;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	padding: 0;
+	margin: 0;
+}
+
+.hero-content-area h3 {
+	/* background-color: yellowgreen; */
+	flex-basis: 80%;
+	text-align: left;
+
+	margin: 0;
+}
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin-top: 50px;
+	}
+}
+
+div.front-box {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+}
+
+div.front-box span {
+	letter-spacing: 0.2em;
+	font-weight: 700;
+	padding-right: 0;
+	text-align: center;
+	margin: 0px;
+	font-size: 43px;
+	font-family: Arial, Helvetica, sans-serif;
+	/* font: normal normal normal 35px/1.4em 'open sans', sans-serif; */
+	border: 4px solid black;
+
+	padding: 10px;
+}
+
+div.second-image {
+	width: 1000px;
+	border: none;
+
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 auto;
+	flex-basis: 80%;
+	vertical-align: baseline;
+	/* transition: opacity 0.2s ease-in 0s; */
+	transition: transform 0.15s ease-in 0s;
+}
+
+.second-image:hover {
+	transform: scale(1.02);
+}
+
+div.img2 {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	height: 550px;
+	padding: 0;
+}
+
+div.content {
+	background-position: 5px;
+}
+
+.content {
+	margin: 40px auto;
+	padding: 0;
+
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	display: flex;
+	border: 1px solid black;
+	width: 80%;
+	height: 50%;
+	justify-content: center;
+	flex-wrap: nowrap;
+	/* background-color: coral; */
+}
+
+.image1 {
+	flex-basis: 40%;
+	background-repeat: no-repeat;
+	object-fit: cover;
+
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+
+.sub-content {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	color: black;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 auto;
+	background-color: #FCF6F5FF;
+	flex-basis: 80%;
+}
+.sub-content h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	transition: color 0.15s ease-in 0s;
+}
+.sub-content p {
+	padding-bottom: 40px;
+	padding-top: 30px;
+	margin: 0 40px;
+	border-bottom: 1px solid black;
+}
+
+div.content:hover h1 {
+	color: goldenrod;
+}
+
+.two {
+	box-shadow: 12px 12px 2px 1px rgba(255, 169, 119, .8);
+}
+.three {
+	box-shadow: 12px 12px 2px 1px rgba(226, 34, 79, 0.4);
+}
+
+.four {
+	box-shadow: 12px 12px 2px 1px rgba(25, 75, 70, 0.5);
+}
+div.four p,
+div.five p {
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.five {
+	box-shadow: 12px 12px 2px 1px rgba(215, 169, 227, 0.5);
+}
+
+/* footer section with flexbox */
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(25, 97, 174);
+	color: #fff;
+	padding: 20px 0;
+}
+
+/* flexbox for ul as well */
+footer ul {
+	display: flex;
+}
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	align-self: center;
+	padding-bottom: 10px;
+}
+footer a {
+	font-weight: 700;
+}
+footer a:hover {
+	color: aqua;
+}
+i {
+	color: #fff;
+}
